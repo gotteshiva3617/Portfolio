@@ -4,8 +4,7 @@ html{
 }
 *{
     margin:0;
-    /* padding:0; */
-    /* color:white; */
+    padding:0;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #active .active1{
@@ -41,6 +40,10 @@ html{
     top:120%;
     left:10%;
 }
+.logo h2{
+    font-family:Arial, Helvetica, sans-serif;
+    color:rgb(92, 83, 72);
+}
 #image-viewer img{
     border-radius:100%;
     height:auto;
@@ -69,8 +72,6 @@ html{
 .nav-links a:hover{
     color:#0d00c0;
 }
-
-
 .side-nav{
     background-color:rgb(255, 255, 255);
     display:flex;
@@ -107,6 +108,7 @@ html{
 #hero h1{
     font-size:2.5rem;
     margin-bottom:2rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #hero p{
     width:60%;
@@ -115,16 +117,17 @@ html{
     font-size:1.1rem;
     font-weight: 500;
     line-height:1.8rem;
-    text-align:center;;
+    text-align:left;
 }
-#hero a{
+
+.btn{
     background-color:rgb(0, 0, 175);
-    border:1px solid black;
+    border:1px solid rgb(255, 255, 255);
     border-radius:5px;
     font-size:18px;
     font-weight:500;
     color:white;
-    padding:10px 12px;
+    padding:8px 10px;
     color:white;
     text-decoration:none;
     margin-top:2rem;
@@ -132,7 +135,6 @@ html{
 #hero a:hover{
     background-color:rgb(0, 12, 121);
 }
-
 /* about me */
 #about{
     padding:5rem;
@@ -175,8 +177,6 @@ html{
     display:flex;
     justify-content:flex-start;
     flex-wrap:wrap;
-
-    /* margin:0 2rem; */
     margin-left:0;
     padding:0;
 }
@@ -193,7 +193,6 @@ html{
 .about-skills li:hover{
     background-color:rgb(22, 54, 160);
 }
-
 /* Study */
 #study{
     background-color:#f1ecec;
