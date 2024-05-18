@@ -73,24 +73,35 @@ html{
     color:#0d00c0;
 }
 .side-nav{
-    background-color:rgb(255, 255, 255);
+    /* background-color:rgb(255, 255, 255); */
     display:flex;
-    flex-direction:column;
-    width:fit-content;
-    position:absolute;
-    left:4px;
-    bottom:35%;
-    padding:10px 12px;
-    border-radius:4px;
 }
-.side-nav a{
+.side-nav li{
     margin:10px 0px;
     font-size:20px;
     color:black;
+    margin-top:1rem;
+    list-style:none;
+    margin:1rem;
+    border-radius:100%;
+    background-color:white;
+    padding:3px 6px;
 }
-.side-nav a:hover{
-    transition-duration: 150ms;
-    transform:scale(1.3)
+.side-nav li:first-child a{
+    color:black;
+}
+.side-nav li:nth-child(2) a{
+    color:rgb(13, 99, 156);
+}
+.side-nav li:nth-child(3) a{
+    color:rgb(24, 23, 23);
+}
+.side-nav li:nth-child(4) a{
+    color:rgb(109, 0, 0);
+}
+.side-nav li:hover{
+    transition-duration: 200ms;
+    transform:scale(1.2)
 }
 #remove{
     display:none;
@@ -121,19 +132,33 @@ html{
 }
 
 .btn{
-    background-color:rgb(0, 0, 175);
-    border:1px solid rgb(255, 255, 255);
+    border:1px solid rgb(0, 0, 0);
     border-radius:5px;
-    font-size:18px;
-    font-weight:500;
+    font-size:15px;
+    font-weight:400;
     color:white;
-    padding:8px 10px;
+    padding:6px 8px;
     color:white;
     text-decoration:none;
-    margin-top:2rem;
+    margin-top:2rem; 
+}
+.resume-btn{
+    background-color:rgb(22, 151, 22);
+}
+.resume-btn:hover{
+    background-color:rgb(0, 122, 0);
+}
+.know-btn{
+    background-color:rgb(21, 32, 139);
+}
+.btn a{
+    color:black;
+}
+.know-btn:hover{
+    background-color:rgb(0, 0, 175);
 }
 #hero a:hover{
-    background-color:rgb(0, 12, 121);
+    /* background-color:rgb(0, 12, 121); */
 }
 /* about me */
 #about{
@@ -387,6 +412,25 @@ footer > p span{
     text-decoration:underline
 }
 
+.wa-btn{
+    /* position:absolute;
+    right:10px;
+    bottom:10px; */
+}
+.message{
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    font-size:26px;
+    background-color:green;
+    color:white;
+    padding:4px 8px;
+    border-radius:8px;
+}
+.fa-whatsapp:hover{
+    transform:scale(1.15);
+    transition:200ms
+}
 @media screen and (max-width:600px){
     .contact-content{
         flex-direction:column;
