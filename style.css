@@ -73,7 +73,6 @@ html{
     color:#0d00c0;
 }
 .side-nav{
-    /* background-color:rgb(255, 255, 255); */
     display:flex;
 }
 .side-nav li{
@@ -106,9 +105,11 @@ html{
 #remove{
     display:none;
 }
+
+
 /* hero */
 #hero{
-    background-image:url('background.avif');
+    background-image:url('../images/background.avif');
     background-size:cover;
     height:90vh;
     display:flex;
@@ -157,9 +158,8 @@ html{
 .know-btn:hover{
     background-color:rgb(0, 0, 175);
 }
-#hero a:hover{
-    /* background-color:rgb(0, 12, 121); */
-}
+
+
 /* about me */
 #about{
     padding:5rem;
@@ -219,9 +219,14 @@ html{
     background-color:rgb(22, 54, 160);
 }
 /* Study */
+
 #study{
     background-color:#f1ecec;
     padding:5rem 7rem;
+}
+#study-heading{
+    text-align:center;
+    font-size:30px;
 }
 #study div h2{
     margin:1.5rem 0;

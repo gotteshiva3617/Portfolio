@@ -11,9 +11,9 @@
 <body>
     <nav class="nav-bar">
         <div class="logo">
-            <img id="profile1" src="photo.jpg" alt="profile">
+            <img id="profile1" src="../images/photo.jpg" alt="profile">
             <div id="image-viewer">
-                <img src="photo.jpg" alt="profile">
+                <img src="../images/photo.jpg" alt="profile">
                 <i id="remove-img" class="fa-solid fa-x"></i>
             </div>
             <h2>GOTTE SHIVA</h2>
@@ -22,6 +22,7 @@
             <a href="#">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
+            <a href="#study">Education</a>
             <a href="#contact">Contact</a>
             <i id="remove" class="fa-solid fa-x"></i>
         </div>
@@ -30,10 +31,10 @@
 
 
     <section id="hero">
-        <h1>Hey, I'M Gotte Shiva</h1>
+        <h1>Hey, I'm Gotte Shiva</h1>
         <p>Passionate Frontend Developer with expertise in HTML, CSS, and JavaScript, specializing in creating responsive and user-friendly web interfaces using modern framework like React.</p>
         <div class="buttons">
-            <a href="myResume.pdf" download><button class="btn resume-btn">Download</button></a>
+            <a href="../folder/shiva_resume.pdf" download><button class="btn resume-btn">Download</button></a>
             <a href="#about"><button class="btn know-btn">Know More</button></a>
             
         </div>
@@ -79,6 +80,7 @@
     <hr>
 
     <section id="study">
+        <h1 id="study-heading">Education</h1>
         <div class="study-1">
             <h2>Graduation</h2>
             <p>Bachelor of Science(Computer Science) with CGPA 8.45 in 2022 in Sphoorthy Degree & PG College,<br>Osmania University,Hyderabad</p>
@@ -176,30 +178,6 @@
         <p>@Copyright 2024.Made by <span>GOTTE SHIVA</span></p>
     </footer>
 
-    <script>
-        const menu = document.getElementById('menu')
-        const active = document.getElementById('active')
-        const remove = document.getElementById('remove')
-        const img1 = document.getElementById('profile1')
-        const removeImg = document.getElementById('remove-img')
-        const imageViewer = document.getElementById('image-viewer')
-
-
-
-        menu.addEventListener('click',function(){
-            active.style.display = 'flex'
-        })
-        remove.addEventListener('click',function(){
-            active.style.display = 'none'
-        })
-
-        img1.addEventListener('click',function(){
-            imageViewer.style.display = 'flex'
-        })
-        
-        removeImg.addEventListener('click',function(){
-            imageViewer.style.display = 'none'
-        })
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
