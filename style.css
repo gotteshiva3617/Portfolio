@@ -5,24 +5,40 @@ html{
 *{
     margin:0;
     padding:0;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-#active .active1{
-    color:#0f00e4;
+body{
+    background-color:rgb(17, 16, 16);
+    color:white;
+    font-family:serif;
 }
+p{
+    color:rgb(184, 184, 184);
+    font-size:18px !important;
+    font-size:1.1rem;
+    font-weight: 800;
+    line-height:1.8rem;
+}
+h1{
+    font-size:1.8rem;
+    font-weight:800;
+    color:white;
+    text-align:center;
+}
+
+/* Nav-Bar */
 .nav-bar {
     display:flex;
     justify-content:space-between;
-    height:12vh;
-    background-color:#ffffff;
+    height:16vh;
     position:sticky;
     top:0;
     left:0;
     z-index:999;
+    background-color:black;
     box-shadow: 0 1px 10px rgb(85, 85, 85);
 }
 .logo{
-    margin-left:1rem;
+    margin-left:2rem;
     display:flex;
     align-items:center;
 }
@@ -31,26 +47,6 @@ html{
     height:50px;
     border-radius:50%;
     margin-right:1rem;
-}
-#image-viewer{
-    display:none;
-}
-.logo #image-viewer{
-    position:absolute;
-    top:120%;
-    left:10%;
-}
-.logo h2{
-    font-family:Arial, Helvetica, sans-serif;
-    color:rgb(92, 83, 72);
-}
-#image-viewer img{
-    border-radius:100%;
-    height:auto;
-    width:auto;
-}
-#image-viewer i{
-    font-size:30px;
 }
 .nav-links{
     margin-right:1rem;
@@ -63,7 +59,7 @@ html{
 }
 .nav-links a{
     text-decoration:none;
-    color:black;
+    color:white;
     font-size:16px;
     font-weight:500;
     margin-right:2rem;
@@ -72,126 +68,92 @@ html{
 .nav-links a:hover{
     color:#0d00c0;
 }
-.side-nav{
-    display:flex;
-}
-.side-nav li{
-    margin:10px 0px;
-    font-size:20px;
-    color:black;
-    margin-top:1rem;
-    list-style:none;
-    margin:1rem;
-    border-radius:100%;
-    background-color:white;
-    padding:3px 6px;
-}
-.side-nav li:first-child a{
-    color:black;
-}
-.side-nav li:nth-child(2) a{
-    color:rgb(13, 99, 156);
-}
-.side-nav li:nth-child(3) a{
-    color:rgb(24, 23, 23);
-}
-.side-nav li:nth-child(4) a{
-    color:rgb(109, 0, 0);
-}
-.side-nav li:hover{
-    transition-duration: 200ms;
-    transform:scale(1.2)
-}
 #remove{
     display:none;
 }
 
-
 /* hero */
 #hero{
-    background-image:url('../images/background.avif');
     background-size:cover;
-    height:90vh;
+    min-height:86vh;
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:center;
 }
 #hero h1{
-    font-size:2.5rem;
+    font-size:2.2rem;
     margin-bottom:2rem;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #hero p{
     width:60%;
     margin-bottom:1.5rem;
-    color:#585858;
-    font-size:1.1rem;
-    font-weight: 500;
-    line-height:1.8rem;
     text-align:left;
 }
-
 .btn{
-    border:1px solid rgb(0, 0, 0);
+    border:none;
     border-radius:5px;
     font-size:15px;
-    font-weight:400;
-    color:white;
-    padding:6px 8px;
+    padding:12px;
     color:white;
     text-decoration:none;
-    margin-top:2rem; 
+    margin:2rem 0.5rem 0 0.5rem; 
+    box-shadow:0 0 4px white;
 }
 .resume-btn{
-    background-color:rgb(22, 151, 22);
+    background-color:rgb(0, 122, 0);
 }
 .resume-btn:hover{
-    background-color:rgb(0, 122, 0);
+    background-color:rgb(22, 151, 22);
 }
 .know-btn{
     background-color:rgb(21, 32, 139);
 }
-.btn a{
-    color:black;
-}
 .know-btn:hover{
     background-color:rgb(0, 0, 175);
 }
-
+.social-links{
+    display:flex;
+}
+.social-links li{
+    margin:10px 0px;
+    font-size:28px;
+    color:black;
+    margin-top:1rem;
+    list-style:none;
+    margin:1rem;
+    border-radius:100%;
+    padding:3px 6px;
+}
+.social-links li a{
+    color:white;
+}
+.social-links li:hover{
+    transition-duration: 200ms;
+    transform:scale(1.2)
+}
 
 /* about me */
 #about{
     padding:5rem;
-    background-color:#f1ecec;
+    min-height:80vh
 }
 .about-header{
     text-align:center;
 }
-.about-header h1{
-    font-size:2.4rem;
-}
 .about-header p{
-    font-size:18px;
-    font-weight:500;
-    color:#464646;
     margin:1rem 0 3rem 0;
 }
 .about-content{
     display:flex;
-    /* padding:3rem; */
 }
 .about-text{
     width:50%;
 }
 .about-text p{
     margin-top:1.5rem;
-    font-size:18px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight:600;
-    color:#2c2c2c;
 }
-
 .about-skills{
     width:50%;
     margin:auto;
@@ -206,56 +168,33 @@ html{
     padding:0;
 }
 .about-skills li{
-    color:#ffffff;
+    color:#000000;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:18px;
     font-weight:600;
-    background-color:rgb(145, 143, 143);
+    background-color:rgb(218, 218, 218);
     border-radius:8px;
     padding:8px 12px;
     margin:1rem 1rem 0 0;
 }
 .about-skills li:hover{
     background-color:rgb(22, 54, 160);
+    color:white;
 }
 /* Study */
-
 #study{
-    background-color:#f1ecec;
     padding:5rem 7rem;
-}
-#study-heading{
-    text-align:center;
-    font-size:30px;
+    min-height:70vh;
 }
 #study div h2{
     margin:1.5rem 0;
-
-}
-#study div p{
-    font-size:18px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:#2c2c2c;
-    font-weight:600;
-}
-#study div p:before{
-    content:">"
 }
 /* Contact  */
-
 .contact{
-    background-color:#f1ecec;
-    padding:3rem;
+    padding:4rem;
     text-align:center;
     font-family:sans-serif;
-}
-.contact h2{
-    margin-top:1rem;
-}
-.contact p{
-    color:#585858;
-    font-weight:700;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height:68vh
 }
 .contact-content{
     display:flex;
@@ -264,52 +203,37 @@ html{
     padding:30px;
 }
 .contact-content div{
-    width:300px;
+    min-width:300px;
     height:150px;
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    box-shadow:0 0 3px rgba(0, 0, 0, 0.651);
     border-radius:6px;
-    color:#464646;
     padding: 1rem 0;
+    box-shadow:0 0 3px rgba(165, 165, 165, 0.651);
 }
 .contact-content div i{
     font-size:1.5rem;
-    color:#585858;
     margin-bottom:1rem;
+    color:rgb(0, 56, 209);
 }
 .contact-content div a{
-    color:#464646;
-    text-decoration:none;
-    color:blueviolet;
-    font-size:20px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
     margin-top:1rem;
 }
 .contact-content div a:hover{
     text-decoration:underline;
 }
-.contact-content div p{
-    margin-top:1rem;
-}
 
 /* projects */
-
 .projects{
-    background-color:#f1ecec;
     padding: 2rem 5rem;
     text-align:center;
 }
 .projects h2{
     margin:2rem;
     font-size:2rem;
-}
-.projects p{
-    color:#464646;
-    font-weight:500;
-    font-size:1.1rem;
 }
 .project-content{
     display:flex;
@@ -320,9 +244,9 @@ html{
 }
 .project-content div{
     width:42%;
-    height:130px;
+    height:fit-content;
     margin-top:2rem;
-    background-color:#d6d6d6;
+    background-color:#d8d8d8;
     padding:2rem;
     border-radius:10px;
     text-align: left;
@@ -333,18 +257,17 @@ html{
 .project-content h4{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight:600;
-    font-size:1.2rem;
+    font-size:1.5rem;
     margin-bottom:0.6rem;
     text-decoration:underline;
-    color:#2c2c2c;
+    color:black;
 }
 .project-content h4:after{
     content: ":";
 }
 .project-content p{
-    font-weight:400;
-    font-weight:1.4rem;
-    color:#464646;
+    color:rgb(43, 43, 43)
+    
 }
 .project-content button{
     margin-top:1rem;
@@ -362,13 +285,11 @@ html{
 
 /* footer */
 footer{
-    background-color:#383838;
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:3rem 5rem;
     flex-wrap:wrap;
-    color:white;
 }
 .footer-text{
     width:50%;
@@ -379,15 +300,6 @@ footer{
     font-family:monospace;
     font-size:1.6rem;
     font-weight:800;
-    
-}
-.footer-text p{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
-    font-size:1.1rem;
-
-}
-.social{
-    padding:3rem;
 }
 .social h3{
     margin: 0 0 1rem 3rem;
@@ -409,18 +321,9 @@ footer{
 footer > p{
     width:100%;
     text-align:center;
-    font-size:1rem;
-    font-weight:500;
-    margin-top: 3rem;;
 }
 footer > p span{
     text-decoration:underline
-}
-
-.wa-btn{
-    /* position:absolute;
-    right:10px;
-    bottom:10px; */
 }
 .message{
     position:fixed;
@@ -443,7 +346,7 @@ footer > p span{
     .contact-content div{
         margin-top:1rem;
     }
-    .side-nav{
+    .social-links{
         bottom:0;
     }
     #about{
@@ -509,7 +412,6 @@ footer > p span{
         top:20px;
     }
     #hero h1{
-        /* padding:3rem; */
         font-size:1.8rem;
     }
     #hero p{
